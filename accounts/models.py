@@ -16,5 +16,5 @@ class UserModel(models.Model):
     profile_image = models.ImageField(upload_to='forum/images')
 
     def __str__(self):
-        return self.user.username
+        return self.user.usernam
 

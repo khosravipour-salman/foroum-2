@@ -1,3 +1,11 @@
+{% if form %}
+<form method='POST' action="{% url 'tag_search' %}">
+	{% csrf_token %}
+	{{ form }}
+	<input type='submit'>
+</form>
+{% endif %}
+
 {% for tag in tags %}
 	<p>{{tag.name}}</p>
 {% endfor %}

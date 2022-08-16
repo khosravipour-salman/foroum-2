@@ -17,3 +17,4 @@ class UserModel(models.Model):
 
     def __str__(self):
         return self.user.username
+
